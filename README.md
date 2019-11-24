@@ -18,4 +18,11 @@
 
 ## Установка
 
-Файл config/passwords_example.ini переименовать в passwords.ini и заполнить настройки
+Установка:
+1. Клонировать репозиторий git clone https://github.com/timurmelnikov/yii2-smart-tech.git
+2. Настроить хост (Apache/Nginx)
+2. Установить пакеты - composer install
+3. Создать файл config/passwords.ini (на основании примера config/passwords_example.ini)
+4. Заполнить файл config/passwords.ini (логин/пароль к БД и ключ авторизации Анти-капча)
+5. Создать БД yii2_smart_tech
+6. Накатить миграции - php yii migrate/up
